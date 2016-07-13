@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.wangtoo.luduoshou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <!-- 使用相机 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 定位所需的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 推送相关的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- QQ登录所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="cn.wangtoo.luduoshou.LuApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 友盟App Key, 必须替换为您在友盟官网上申请到的. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="564d832c67e58e53f4002c2d" >
+        </meta-data>
+        <!-- 友盟推送的app secret, 如果不使用友盟推送可以删除 -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="229be217ed3bfd78c40c2d7fd7f81122" >
+        </meta-data>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="31d453277fdab43f4eed3c2afd9c9d2d" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+     
+        
+      
+    </application>
+
+</manifest>
