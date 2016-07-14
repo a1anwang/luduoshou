@@ -1,26 +1,25 @@
 package cn.wangtoo.luduoshou;
 
-import java.io.ByteArrayInputStream;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.cert.X509Certificate;
-
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
 import android.widget.Toast;
 
 public class MainActivity extends LuBaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+	
+		
+		
 		super.onCreate(savedInstanceState);
 
 		// setStatusBarColor(Color.RED);
@@ -37,10 +36,7 @@ public class MainActivity extends LuBaseActivity {
 
 		toolbar.setOnMenuItemClickListener(onMenuItemClick);
 
-		// 获取CommunitySDK实例, 参数1为Context类型
-		// CommunitySDK mCommSDK = CommunityFactory.getCommSDK(this);
-		// 打开微社区的接口, 参数1为Context类型
-		// mCommSDK.openCommunity(this);
+ 
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
@@ -49,8 +45,13 @@ public class MainActivity extends LuBaseActivity {
 				R.string.drawer_close);
 		mDrawerToggle.syncState();
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
-		
-		 
+ 
+		Intent intent=new Intent(this,CommunityMainActivity.class);
+		startActivity(intent);
+//		// 获取CommunitySDK实例, 参数1为Context类型
+//		CommunitySDK mCommSDK = CommunityFactory.getCommSDK(this);
+//		// 打开微社区的接口, 参数1为Context类型
+//		mCommSDK.openCommunity(this);*/
 	}
 
 	@Override

@@ -2,6 +2,9 @@ package cn.wangtoo.luduoshou;
 
 import android.app.Application;
 
+import com.umeng.comm.core.sdkmanager.LocationSDKManager;
+import com.umeng.community.location.DefaultLocationImpl;
+
 public class LuApplication extends Application{
 
 	private   String TAG="LuApplication";
@@ -13,7 +16,7 @@ public class LuApplication extends Application{
 		LogUtils.e(TAG, "onCreate ");
 		
 		// 确保不要重复注入同一类型的对象,建议在Application类的onCreate中执行该代码。
-		//LocationSDKManager.getInstance().addAndUse(new DefaultLocationImpl()) ;
+		 LocationSDKManager.getInstance().addAndUse(new DefaultLocationImpl()) ;
 	}
 	
 	
