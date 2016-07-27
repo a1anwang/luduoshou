@@ -13,20 +13,11 @@
 
         <!-- 内容界面 -->
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/pink"
-                
-                android:text="内容" />
-            
-            
-        </LinearLayout>
+            android:layout_height="match_parent" >
+        </FrameLayout>
 
         <!-- 侧滑菜单内容 -->
 

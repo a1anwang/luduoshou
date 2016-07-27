@@ -1,16 +1,12 @@
 package cn.wangtoo.luduoshou;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Window;
 import android.widget.Toast;
 
 public class MainActivity extends LuBaseActivity {
@@ -52,6 +48,8 @@ public class MainActivity extends LuBaseActivity {
 //		CommunitySDK mCommSDK = CommunityFactory.getCommSDK(this);
 //		// 打开微社区的接口, 参数1为Context类型
 //		mCommSDK.openCommunity(this);*/
+		
+		
 	}
 
 	@Override

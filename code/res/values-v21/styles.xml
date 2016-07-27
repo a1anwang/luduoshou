@@ -6,7 +6,7 @@
         
      
           <!-- 底部导航栏颜色 -->  
-          <item name="android:navigationBarColor">@color/green_light</item>  
+          <item name="android:navigationBarColor">@color/blue</item>  
         <!-- theme UI controls like checkboxes and text fields -->
         <!-- <item name="android:colorAccent">@color/theme_green</item> -->
     </style>

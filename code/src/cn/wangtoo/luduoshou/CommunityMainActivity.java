@@ -23,12 +23,19 @@ public class CommunityMainActivity extends FragmentActivity{
 		
 		 CommunityMainFragment fragment = new CommunityMainFragment();
 	        fragment.setBackButtonVisibility(View.GONE);
-	        // 3、将友盟微社区的首页Fragment添加到Activity中
-	        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
+	    getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
 	}
 	@Override
 	protected void onNewIntent(Intent intent) {
 	    super.onNewIntent(intent);     
 	    setIntent(intent);
+	}
+	
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		
 	}
 }
