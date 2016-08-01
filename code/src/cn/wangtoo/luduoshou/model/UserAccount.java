@@ -31,4 +31,13 @@ public class UserAccount extends Model{
 	
 	@Column(name = "headImageURL")
 	public String headImageURL;
+	
+	@Column(name = "registerTime")
+	public int registerTime;
+	
+	@Column(name = "signinDays")
+	public int signinDays;
+	
+	
+	
 }

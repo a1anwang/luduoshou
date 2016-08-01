@@ -6,8 +6,8 @@
     android:versionName="2.5" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
 
     <!-- 使用相机 -->
     <uses-feature

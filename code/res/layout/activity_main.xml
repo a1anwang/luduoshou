@@ -13,11 +13,20 @@
 
         <!-- 内容界面 -->
 
-        <FrameLayout
+        <RelativeLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-        </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                
+                 android:orientation="vertical" 
+                android:background="@color/blue" >
+            </LinearLayout>
+        </RelativeLayout>
 
         <!-- 侧滑菜单内容 -->
 

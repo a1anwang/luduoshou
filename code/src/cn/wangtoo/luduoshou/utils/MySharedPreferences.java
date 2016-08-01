@@ -209,4 +209,15 @@ public class MySharedPreferences {
 		return preferences.getBoolean("MessageVibrate", true);
 	}
 	
+	
+	
+	
+	public void saveTodaySigned(boolean flag) {
+		editor.putBoolean("TodaySigned", flag);
+		editor.commit();
+	} 
+
+	public boolean getTodaySigned() {
+		return preferences.getBoolean("TodaySigned", false);
+	}
 }

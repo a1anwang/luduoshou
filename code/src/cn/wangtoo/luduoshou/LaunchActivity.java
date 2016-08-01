@@ -59,7 +59,7 @@ public class LaunchActivity extends LuBaseActivity implements AnimationListener 
 //		} else {
 			boolean logined = mySharedPreferences.getIsLogined();
 			if (logined) {
-				startActivity(new Intent(this, MainActivity.class));
+				startActivity(new Intent(this, CommunityMainActivity.class));
 			} else {
 				startActivity(new Intent(this, LoginActivity.class));
 			}

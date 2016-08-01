@@ -5,20 +5,22 @@
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="LaunchAppTheme" parent="AppBaseTheme">
-        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
-
+    <item name="android:windowNoTitle">true</item>
         <!-- Main theme colors -->
         <!-- toolbar（actionbar）颜色 -->
         <item name="colorPrimary">@color/blue</item>
         <!-- 状态栏颜色 -->
         <item name="colorPrimaryDark">@color/blue</item>
-
-        <!-- 窗口的背景颜色 -->
+		<item name="colorControlNormal">@color/white</item>
+       
+        
+        
+    <!--     窗口的背景颜色
         <item name="android:windowBackground">@color/blue</item>
         <item name="default_background_color">@color/umeng_comm_default_background_color</item>
         <item name="umeng_comm_indicator_default">@color/umeng_comm_indicator_default</item>
@@ -208,11 +210,13 @@
         <item name="umeng_comm_clip_image_paint">@color/umeng_comm_clip_image_paint</item>
         <item name="umeng_comm_topic_tip_bg">@color/umeng_comm_topic_tip_bg</item>
         <item name="umeng_comm_nearby_location_icon">@drawable/umeng_comm_nearby_loc_icon</item>
-        <item name="umeng_comm_no_content_default_color">@color/umeng_comm_black_color</item>
+        <item name="umeng_comm_no_content_default_color">@color/umeng_comm_black_color</item> -->
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme"></style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
     <style name="MyDialog" parent="@android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>

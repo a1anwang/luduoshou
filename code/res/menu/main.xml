@@ -2,24 +2,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" >
  
-    <item
-        android:id="@+id/action_edit"
-        android:icon="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-        android:orderInCategory="80"
-        android:title="编辑"
-        app:showAsAction="ifRoom"/>
- 
+   
   
     <item
         android:id="@+id/action_share"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
         android:orderInCategory="90"
-        android:title="分享"
+        
+          android:title="分享"
         app:showAsAction="ifRoom"/>
-    <item
-        android:id="@+id/action_settings"
+   
+  <item
+        android:id="@+id/action_signin"
+        android:icon="@drawable/icon_sign_normal"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
- 
+        android:title="签到"
+        app:showAsAction="ifRoom"/>
+ 
 </menu>

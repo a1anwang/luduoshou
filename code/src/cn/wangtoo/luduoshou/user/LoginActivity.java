@@ -128,7 +128,8 @@ public class LoginActivity extends LuBaseActivity {
 			// 昵称等信息：http://wiki.open.qq.com/wiki/%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF
 
 			// 创建CommUser前必须先初始化CommunitySDK
-
+			
+			
 			showLoginProgressDialog();
 
 			OkHttpClient okHttpClient = new OkHttpClient();
@@ -313,6 +314,10 @@ public class LoginActivity extends LuBaseActivity {
 								userAccount.headImageURL = jsonObject
 										.getString("headImageURL");
 
+								boolean todaySigned=jsonObject.getBoolean("todaySigned");
+								
+								mySharedPreferences.saveTodaySigned(todaySigned);
+								
 								loginToUmeng(userAccount);
 
 							} else if (err == 1) {
