@@ -1,1 +1,1 @@
-{"apkURL":"http://sss","versionCode":1,"updateLog":"更新内容","versionName":"V1.5"}
+{"apkURL":"http://oap8lcemz.bkt.clouddn.com/LuDuoShouV1.2.apk","versionCode":2,"updateLog":"V1.2\n 解决一些BUG","versionName":"V1.2"}
