@@ -1,1 +1,1 @@
-{"ServerIP":"http://a1anwang.com/apps/luduoshou/api/"}
+{"ServerIP":"http://192.168.1.108/luduoshou/"}
