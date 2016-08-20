@@ -1,1 +1,1 @@
-{"apkURL":"http://oap8lcemz.bkt.clouddn.com/LuDuoShouV1.5_15_jiagu_sign.apk","versionCode":5,"updateLog":"V1.5\n 1.修复更改昵称之后首页未及时更新的bug\n 2.首页分享功能完善\n","versionName":"V1.5"}
+{"apkURL":"http://oap8lcemz.bkt.clouddn.com/LuDuoShouV1.5_15_jiagu_sign.apk","versionCode":6,"updateLog":"V1.5.1\n 1. 紧急修复未上传头像用户首页无法分享的BUG\n","versionName":"V1.5.1"}
